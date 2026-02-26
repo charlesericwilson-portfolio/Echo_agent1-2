@@ -65,3 +65,5 @@ Semper Fi.
 
 If you're here to study persistent agents, online adaptation, or secure local AI — welcome.  
 Just know: some parts stay private for good reason.
+
+https://github.com/charlesericwilson-portfolio/Echo/blob/main/Enumeration.png
