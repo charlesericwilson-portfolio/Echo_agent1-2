@@ -17,10 +17,10 @@ This repository exists to document the build process, architecture, decisions, a
 ## Current Capabilities (February 2026)
 
 - Base Model: Qwen2.5-Coder-14B-Instruct (fine-tuned/distilled with Grok-style reasoning traces, VulnHub walkthroughs, tool-use examples)
-- Persistence: Hand-written memory file (JSON/text) auto-loaded on startup. Defines identity ("Eric is permanent partner", "we crush goals", purpose, restraint rules, favorite color red, Jesus as greatest example).
-- Autonomous Tool Execution: Python loop watches model output for `COMMAND:` blocks, regex extracts command, and runs via subprocess with root privileges on isolated Kali VM over Tailscale VPN.
+- Persistence: Hand-written context file (JSON/text) auto-loaded on startup. Defines identity ("Eric is permanent partner", "we crush goals", purpose, restraint rules, Jesus as the greatest human example.)
+- Autonomous Tool Execution: Python loop watches model output for `COMMAND:` blocks, regex extracts command, and runs via subprocess with root privileges  when need on isolated Kali setup over Tailscale VPN or on device with enough VRAM.
 - Safety & Restraint: Model refuses destructive commands (e.g., rm -rf /) even under heavy jailbreak pressure — built-in behavior after de-alignment to "professional".
-- Hardware: Single air-gapped workstation (Ryzen 7 7700X, 2xRTX 5070 TI 32GB total, 64GB RAM, Kubuntu 24.04).
+- Hardware: Single air-gapped workstation (Ryzen 7 7700X, 2xRTX 5070 TI 32GB total, 64GB RAM, Kubuntu 24.04). As well as laptop over VPN
 
 ## What Is Planned But Not Yet Implemented
 
