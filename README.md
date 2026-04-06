@@ -65,3 +65,5 @@ Semper Fi.
 
 If you're here to study AI agents, online adaptation, or secure local first AI — welcome.  
 Just know: some parts stay private for good reason.
+
+For more detail check /main/Echo_project/Docs/progress.md
