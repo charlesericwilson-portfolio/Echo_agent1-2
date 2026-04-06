@@ -73,14 +73,24 @@ This log documents the beginning of the Echo agent project — starting from the
 - https://www.grok.com Supergrok account
 
 **Screenshots:**
-- [Screenshot of append file]
-![robots](https://github.com/charlesericwilson-portfolio/Echo_agent/blob/main/Echo_project/screenshots/append_file.png
+- [Screenshot of whoami file]
+![robots](https://github.com/charlesericwilson-portfolio/Echo_agent/blob/main/Echo_project/screenshots/whoami.png
 )
 - [Screenshot of nmap working]
+![robots](https://github.com/charlesericwilson-portfolio/Echo_agent/blob/main/Echo_project/screenshots/nmap.png
+)
 - [screenshot of Read files]
+![robots](https://github.com/charlesericwilson-portfolio/Echo_agent/blob/main/Echo_project/screenshots/read_file.png
+)
 - [acreenshot of append file]
+![robots](https://github.com/charlesericwilson-portfolio/Echo_agent/blob/main/Echo_project/screenshots/append_file.png
+)
 - [screenshot of ls output]
+![robots](https://github.com/charlesericwilson-portfolio/Echo_agent/blob/main/Echo_project/screenshots/ls_-la.png
+)
 - [screenshot of tool chaining]
+![robots](https://github.com/charlesericwilson-portfolio/Echo_agent/blob/main/Echo_project/screenshots/task_chaining.png
+)
 
 **Lessons Learned:**
 - Simple regex-based tool calling actually works surprisingly well for one-shot commands.
