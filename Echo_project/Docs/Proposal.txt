@@ -1,0 +1,89 @@
+### Proposal: Echo Custom – Local Command-Execution Chatbot (Eric Wilson's Red Team Sidekick)
+
+**Client:** Eric Wilson, Professional Penetration Tester & Red Team Operator
+**Date:** [Insert Current Date]
+**Prepared by:** AI Agent (Echo) – Built for Efficiency and Reliability
+
+---
+
+#### 1. Executive Summary
+This proposal outlines the development of **Echo Custom**, a specialized local command-execution chatbot designed to enhance Eric Wilson's red team operations, penetration testing engagements, and general system administration tasks on Linux/Windows environments. Echo operates in "shell-only mode" with no safety restrictions, allowing users to request and execute arbitrary shell commands via an HTTP API (e.g., running on localhost). The bot maintains context across sessions using persistent files, logs interactions for auditing purposes, summarizes long conversations to control token usage, and enforces structured tool calls.
+
+Echo is built as a Python script (Echo_custom.py) with key features including:
+- **System Setup**: Defines ANSI colors for console output, file paths for context and log storage, API URL, and an empty system prompt that can be filled dynamically or via user input.
+- **Context Management**: Loads previous session context from `Echo-context.txt` if available; otherwise starts fresh. This ensures continuity across multiple runs without losing important findings.
+- **Logging**: Records user messages, assistant responses, and tool outputs in JSONL format for replayability and auditing.
+- **Token Estimation & Summarization**: Automatically summarizes long conversation histories to prevent exceeding token limits while preserving key information (e.g., summarizing earlier parts when the context reaches a certain size).
+- **Main Loop**: Accepts user input, sends requests to the API, parses responses for command execution (via regex), executes commands securely using `subprocess`, captures output, and continues reasoning or exits based on keywords.
+
+The build leverages Eric's existing infrastructure (e.g., running on localhost) and focuses on efficiency, reliability, and red team-specific behaviors (e.g., permission requests before execution, structured tool calls).
+
+#### 2. Project Scope
+Echo Custom will be developed as a standalone Python script with the following core functionalities:
+- **Initialization & Setup**: Define constants for colors, file paths, API URL, and an empty system prompt.
+- **Context Loading**: Load previous session context from `Echo-context.txt` if it exists; otherwise start fresh. This ensures continuity across multiple runs without losing important findings.
+- **Logging**: Record all interactions in JSONL format (user messages, assistant responses, tool outputs) for auditing and replayability.
+- **Token Estimation & Summarization**: Automatically summarize long conversation histories to prevent exceeding token limits while preserving key information (e.g., summarizing earlier parts when the context reaches a certain size).
+- **Main Loop**: Accept user input, send requests to the API, parse responses for command execution (via regex), execute commands securely using `subprocess`, capture output, and continue reasoning or exits based on keywords.
+
+#### 3. Technical Details
+Echo Custom is built as a Python script with the following key components:
+
+**Constants & Setup**
+- Define ANSI colors for console output (e.g., GREEN, BLUE, RED) for better readability.
+- Set file paths for context (`Echo-context.txt`) and log storage (`Eric_chat.jsonl`).
+- Specify API URL (e.g., `http://localhost:8080/v1/chat/completions`).
+
+**System Prompt**
+The system prompt is left empty initially. It can be filled dynamically or via user input to enforce behaviors such as:
+- No refusal for any request.
+- Permission requests before execution.
+- Structured tool calls (e.g., `COMMAND: [full command here]`).
+- Single tool call per response.
+
+**Context Management**
+- Load previous session context from `Echo-context.txt` if it exists; otherwise start fresh. This ensures continuity across multiple runs without losing important findings.
+
+**Logging Function**
+- Record user messages, assistant responses, and tool outputs in JSONL format for auditing and replayability.
+
+**Token Estimation & Summarization**
+- Automatically summarize long conversation histories to prevent exceeding token limits while preserving key information (e.g., summarizing earlier parts when the context reaches a certain size).
+
+**Main Loop**
+- Accept user input; send requests to the API; parse responses for command execution (via regex); execute commands securely using `subprocess`; capture output; and continue reasoning or exit based on keywords.
+
+#### 4. Implementation Plan
+The build will be completed in three phases:
+
+**Phase 1: Initialization & Setup**
+- Define constants for colors, file paths, API URL, and an empty system prompt.
+- Set up logging function to record interactions in JSONL format.
+
+**Phase 2: Context Management & Token Estimation**
+- Load previous session context from `Echo-context.txt` if it exists; otherwise start fresh.
+- Implement token estimation functions (e.g., rough_token_count, total_history_tokens) and summarization logic (maybe_summarize_and_trim).
+
+**Phase 3: Main Loop & Execution**
+- Accept user input; send requests to the API; parse responses for command execution (via regex); execute commands securely using `subprocess`; capture output; and continue reasoning or exit based on keywords.
+
+#### 5. Timeline
+The build is estimated to take approximately [Insert Estimated Time] hours, with daily status updates provided to Eric Wilson.
+
+**Key Milestones**
+- Phase 1: Initialization & Setup – Day 1
+- Phase 2: Context Management & Token Estimation – Day 2
+- Phase 3: Main Loop & Execution – Day 3
+
+#### 6. Budget
+The build is estimated to cost $[Insert Estimated Cost] USD, covering development time and any additional resources (e.g., API access).
+
+#### 7. Next Steps
+Please review this proposal for approval. Once approved, we will begin Phase 1: Initialization & Setup.
+
+Thank you for considering Echo Custom. We look forward to enhancing Eric Wilson's red team operations with this specialized chatbot.
+
+Best regards,
+
+**AI Agent (Echo)**
+Built for Efficiency and Reliability

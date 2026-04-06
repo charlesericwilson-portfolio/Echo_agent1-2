@@ -1,0 +1,67 @@
+# Constants & Setup
+Define ANSI colors: GREEN, BLUE, RED, BOLD, RESET
+Set file paths: CONTEXT_FILE_PATH, LOG_FILE
+API_URL = "http://localhost:8080/v1/chat/completions"
+
+SYSTEM_PROMPT = "" # Empty — to be filled dynamically or via user input
+
+messages = [{"role": "system", "content": SYSTEM_PROMPT}]
+
+# Load context if exists (without logging full content)
+If CONTEXT_FILE_PATH exists:
+    Read context_content from file
+    If non-empty: append to messages as system message; print loaded success
+Else: print no context found — clean start
+
+Print startup banner with mode, working directory, and tool output redirection hint
+last_command = None
+
+# Logging function (only chat + tool calls)
+Function log_to_jsonl(role, content):
+    Create JSON entry {role: role, content: content}
+    Append to LOG_FILE in jsonl format; handle exceptions
+
+Log session start as system message
+
+Define token estimation constants & functions:
+MAX_ALLOWED_TOKENS = 55000
+SUMMARY_TRIGGER_TOKENS = 30000
+MIN_MESSAGES_TO_KEEP = 10
+
+Function rough_token_count(text): return len(text) // 3 + text.count('\n') * 2
+Function total_history_tokens(messages): sum token counts of all messages
+Function maybe_summarize_and_trim(messages):
+    If current tokens < SUMMARY_TRIGGER_TOKENS: return messages as-is
+    Print context getting long — generating summary...
+    Separate system, recent, and other parts
+    Generate summary prompt focusing on key goals, findings, tool calls & results chronologically
+    Call API to generate summary (max_tokens 800)
+    Update messages with new system message containing summary + recent part
+
+Function send_to_api():
+    Create payload with current messages
+    Send POST request to API_URL; handle exceptions; return response content
+
+APPROVAL_KEYWORDS = {"yes", "go", "proceed", "approved", "ok", "yeah", "y", "continue", "execute"}
+
+Main loop:
+While True:
+    Trim and summarize messages if needed
+    Accept user_input: print prompt; read line
+    If quit/exit/q: log session end; break
+    If approval keyword in input (case-insensitive): set user_content to approved message
+    Else: use raw input as user_content
+    Append user message to history; log it
+    Inner loop for API response handling:
+        Send request to API → receive response
+        Print assistant response with colors
+        Search for COMMAND pattern: if found extract command
+        If same as last_command: print repeat warning; append rejection to history; continue inner loop
+        Update last_command; prepend sudo if nmap without it
+        Execute command securely using subprocess (capture output, handle timeout/exception)
+        Format tool output with return code, stdout/stderr, save to timestamped file
+        Append assistant and tool messages to history; log both
+        If response asks for approval: break inner loop → wait for user input
+        Else treat as final answer; append to history; log; exit inner loop
+
+Print session ended message with log path
