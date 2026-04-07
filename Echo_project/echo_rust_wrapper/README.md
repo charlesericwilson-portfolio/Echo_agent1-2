@@ -21,5 +21,6 @@ Detects lines like `COMMAND: nmap -sV 192.168.1.50` from your local LLM, runs th
 cd [build directory]
 cargo build --release
 ./target/release/echo_rust_wrapper
+```
 
 Build direction is moving toward this https://github.com/charlesericwilson-portfolio/Echo_agent_proxy
