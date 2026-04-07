@@ -19,7 +19,7 @@ Current recommended version: **Rust** (much faster and cleaner than the original
 - `echo_rust_wrapper/` — **Recommended**: Fast Rust port (active development)
 - `docs/` — Progress logs and journey notes
 
-See the full journey in [docs/progress_rust.md](https://github.com/charlesericwilson-portfolio/Echo_agent/blob/main/Echo_project/Docs/progress_rust.md).
+See the full journey in [progress_rust.md](https://github.com/charlesericwilson-portfolio/Echo_agent/blob/main/Echo_project/Docs/progress_rust.md).
 
 ---
 
