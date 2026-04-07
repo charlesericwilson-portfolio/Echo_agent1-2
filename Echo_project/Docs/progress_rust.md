@@ -1,10 +1,10 @@
 ﻿ # Echo Project - Progress Log
 
-**Project:** Echo Custom Wrapper (The True Origin Story)
+**Project:** Echo Custom Wrapper (The Rust port)
 **Author:** Charles (Eric) Wilson
-**Start Date:** April 2026
+**Start Date:** January 2026
 
-This log documents the beginning of the Echo agent project — starting from the very first simple Python wrapper.
+This log documents the beginning of the Echo agent rust port — starting from the very first simple Python wrapper.
 
 ## Phase 0: The Starting Point (Infrastructure)
 
@@ -68,22 +68,19 @@ This log documents the beginning of the Echo agent project — starting from the
 
 **Screenshots:**
 - [Screenshot of whoami file]
-![robots](https://github.com/charlesericwilson-portfolio/Echo_agent/blob/main/Echo_project/screenshots/whoami.png
+![whoami](https://github.com/charlesericwilson-portfolio/Echo_agent/blob/main/Echo_project/echo_rust_wrapper/echo_rust_screenshots/whoami.png
 )
 - [Screenshot of nmap working]
-![robots](https://github.com/charlesericwilson-portfolio/Echo_agent/blob/main/Echo_project/screenshots/nmap.png
+![ls_-la](https://github.com/charlesericwilson-portfolio/Echo_agent/blob/main/Echo_project/echo_rust_wrapper/echo_rust_screenshots/ls_-la.png
 )
 - [screenshot of Read files]
-![robots](https://github.com/charlesericwilson-portfolio/Echo_agent/blob/main/Echo_project/screenshots/read_file.png
+![robots](https://github.com/charlesericwilson-portfolio/Echo_agent/blob/main/Echo_project/echo_rust_wrapper/echo_rust_screenshots/read_file.png
 )
 - [acreenshot of append file]
-![robots](https://github.com/charlesericwilson-portfolio/Echo_agent/blob/main/Echo_project/screenshots/append_file.png
-)
-- [screenshot of ls output]
-![robots](https://github.com/charlesericwilson-portfolio/Echo_agent/blob/main/Echo_project/screenshots/ls_-la.png
+![robots](https://github.com/charlesericwilson-portfolio/Echo_agent/blob/main/Echo_project/echo_rust_wrapper/echo_rust_screenshots/append_file.png
 )
 - [screenshot of tool chaining]
-![robots](https://github.com/charlesericwilson-portfolio/Echo_agent/blob/main/Echo_project/screenshots/task_chaining.png
+![multiple](https://github.com/charlesericwilson-portfolio/Echo_agent/blob/main/Echo_project/echo_rust_wrapper/echo_rust_screenshots/multiple_commands.png
 )
 
 **Lessons Learned:**
@@ -93,5 +90,5 @@ This log documents the beginning of the Echo agent project — starting from the
 - code length exploded using rust definitly more than I was expecting.
 
 **Next Steps:**
-- Experiment with more complex architectures (persistent sessions, heartbeat, orchestrator)
+- Experiment with more complex architectures (persistent sessions, heartbeat, orchestrator) check here [Echo agent proxy](https://github.com/charlesericwilson-portfolio/Echo_agent_proxy)
 - Document everything as we go
