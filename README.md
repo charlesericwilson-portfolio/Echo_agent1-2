@@ -19,11 +19,11 @@ Current recommended version: **Rust** (much faster and cleaner than the original
 - `echo_rust_wrapper/` — **Recommended**: Fast Rust port (active development)
 - `docs/` — Progress logs and journey notes
 
-See the full journey in [progress_python](https://github.com/charlesericwilson-portfolio/Echo_agent/blob/main/Echo_project/Docs/progress_python.md) and [progress_rust.md](https://github.com/charlesericwilson-portfolio/Echo_agent/blob/main/Echo_project/Docs/progress_rust.md).
+See the full journey in [progress_python.md](https://github.com/charlesericwilson-portfolio/Echo_agent/blob/main/Echo_project/Docs/progress_python.md) and [progress_rust.md](https://github.com/charlesericwilson-portfolio/Echo_agent/blob/main/Echo_project/Docs/progress_rust.md).
 
 ---
 
 Built locally with a custom 14B model. Safety deny list included.  
-For red teaming and learning purposes only.
+For chat, red teaming, and learning purposes only.
 
 Ongoing builds are [Echo Agent Proxy](https://github.com/charlesericwilson-portfolio/Echo_agent_proxy)
