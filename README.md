@@ -1,6 +1,6 @@
-# Echo - Local Red Team AI Agent
+# Echo - Local Red Team AI Agent tool
 
-**A fast, local AI sidekick that executes shell commands safely via `COMMAND: your command` lines from a custom LLM.**
+**A fast, local AI tool wrapper that executes shell commands safely via `COMMAND: your command` lines from a custom LLM.**
 
 Current recommended version: **Rust** (much faster and cleaner than the original Python version).
 
@@ -10,9 +10,10 @@ Current recommended version: **Rust** (much faster and cleaner than the original
 
 - **How do I try it?**  
   Go to the [Rust version](https://github.com/charlesericwilson-portfolio/Echo_agent/blob/main/Echo_project/echo_rust_wrapper/README.md) — build and run in under 2 minutes.
+  Option 2 download the [python_wrapper](https://github.com/charlesericwilson-portfolio/Echo_agent1-2/blob/main/Echo_project/python_wrapper/Echo_custom.py) read the [README.md](https://github.com/charlesericwilson-portfolio/Echo_agent1-2/blob/main/Echo_project/python_wrapper/README.md) takes just a minute.
 
 - **Does it work?**  
-  Yes — the Rust COMMAND executor is stable and working daily. The older complex Python proxy was experimental and is no longer the main focus.
+  Yes — the Rust COMMAND executor is newer stable and working daily. The older Python wrapper works and is stable as well but is no longer the main focus.
 
 ### Repository Structure
 - `python_wrapper/` — Original simple Python implementation
