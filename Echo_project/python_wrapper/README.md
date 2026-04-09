@@ -30,6 +30,8 @@ See the full journey in [progress_python.md](https://github.com/charlesericwilso
 Built locally with a custom 14B model. Safety deny list included.  
 For chat, red teaming, and learning purposes only.
 
-Builds in testing [Echo_tmux](https://github.com/charlesericwilson-portfolio/Echo_tmux/blob/main/README.md)
-Builds in development [Echo Agent Proxy](https://github.com/charlesericwilson-portfolio/Echo_agent_proxy) 
 Next step is a port to rust check it out here [Echo rust](https://github.com/charlesericwilson-portfolio/Echo_agent/blob/main/Echo_project/echo_rust_wrapper/README.md)
+
+Builds in testing [Echo_tmux](https://github.com/charlesericwilson-portfolio/Echo_tmux/blob/main/README.md)
+
+Builds in development [Echo Agent Proxy](https://github.com/charlesericwilson-portfolio/Echo_agent_proxy) 
