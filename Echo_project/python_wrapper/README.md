@@ -34,4 +34,4 @@ Next step is a port to rust check it out here [Echo rust](https://github.com/cha
 
 Builds in testing [Echo_tmux](https://github.com/charlesericwilson-portfolio/Echo_tmux/blob/main/README.md)
 
-Builds in development [Echo Agent Proxy](https://github.com/charlesericwilson-portfolio/Echo_agent_proxy) 
+Builds in development [Echo Agent Proxyv4](https://github.com/charlesericwilson-portfolio/Echo_agent_proxy), [Echo_rust_proxyv5](https://github.com/charlesericwilson-portfolio/Echo_rust_agent_proxyv5)
