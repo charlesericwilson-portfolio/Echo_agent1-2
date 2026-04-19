@@ -21,7 +21,7 @@ Current recommended version: **Rust** (much faster and cleaner than the original
 - `echo_rust_wrapper/` — **Recommended**: Fast Rust port (active development)
 - `docs/` — Progress logs and journey notes
 
-See the full journey in [progress_python.md](https://github.com/charlesericwilson-portfolio/Echo_agent/blob/main/Echo_project/Docs/progress_python.md) and [progress_rust.md](https://github.com/charlesericwilson-portfolio/Echo_agent/blob/main/Echo_project/Docs/progress_rust.md).
+See the full journey and screenshots in [progress_python.md](https://github.com/charlesericwilson-portfolio/Echo_agent/blob/main/Echo_project/Docs/progress_python.md) and [progress_rust.md](https://github.com/charlesericwilson-portfolio/Echo_agent/blob/main/Echo_project/Docs/progress_rust.md).
 
 ---
 
@@ -32,4 +32,4 @@ Builds in testing [Echo_tmux](https://github.com/charlesericwilson-portfolio/Ech
 Builds in development [Echo Agent Proxy](https://github.com/charlesericwilson-portfolio/Echo_agent_proxy), [Echo rust agent proxyv5](https://github.com/charlesericwilson-portfolio/Echo_rust_agent_proxyv5/tree/main)
 
 ## Status April 11, 2026
-This repo has had 184 unique cloners + 3 YouTube refferals. Next steps focusing on v4 and v5.
+This repo has had 212 unique cloners + 4 YouTube refferals. Next steps focusing on v4 and v5.
