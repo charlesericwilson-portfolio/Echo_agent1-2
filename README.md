@@ -14,7 +14,7 @@ Current recommended version: **Rust** (much faster and cleaner than the original
   Option 2 download the [python_wrapper](https://github.com/charlesericwilson-portfolio/Echo_agent1-2/blob/main/Echo_project/python_wrapper/Echo_custom.py) read the [README.md](https://github.com/charlesericwilson-portfolio/Echo_agent1-2/blob/main/Echo_project/python_wrapper/README.md) takes just a minute.
 
 - **Does it work?**  
-  Yes — the Rust COMMAND executor is newer stable and working daily. The older Python wrapper works and is stable as well but is no longer the main focus.
+  Yes — the Rust COMMAND executor is newer stable and working daily. The older Python wrapper works and is stable as well but is no longer the main focus. Can be ran on remote device connected to the server over vpn and tools execute on the remote device.
 
 ### Repository Structure
 - `python_wrapper/` — Original simple Python implementation
